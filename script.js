@@ -6,3 +6,11 @@ hamMenu.addEventListener('click', () =>{
   hamMenu.classList.toggle('active')
   offScreenMenu.classList.toggle('active')
 });
+
+const navs = document.querySelectorAll(".nav")
+navs.forEach((nav)=>{
+  nav.addEventListener('click', function(){
+    hamMenu.classList.remove('active')
+  offScreenMenu.classList.remove('active')
+  })
+})
