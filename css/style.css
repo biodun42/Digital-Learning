@@ -46,13 +46,16 @@ header {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  padding: 0.2rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 10px;
 }
-form input {
-  border-radius: 50px;
-  padding: 0.3rem 1rem;
+.form-header input {
+  border-radius: 100px;
+  padding: 0.3rem 0.5rem;
   border: none;
+}
+.form-header input::placeholder{
+  color: #1a2434
 }
 .hamburger-menu {
   height: 50px;
@@ -123,6 +126,17 @@ form input {
 }
 .Links2 li a:hover {
   text-decoration: underline;
+}
+.Links2 form{
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0.1rem;
+  border-radius: 50px;
+}
+.Links2 form input {
+  border-radius: 50px;
+  padding-left: 0.9rem;
+  border: none;
 }
 .hamburger-menu{
   display: none;

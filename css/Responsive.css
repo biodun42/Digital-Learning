@@ -78,6 +78,10 @@
     }
 }
 @media screen and (max-width: 622px) {
+  .Links2 form{
+  padding: 0.2rem 0rem;
+  
+  }
   .Left-top h1 {
     text-align: center;
   }
