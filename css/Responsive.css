@@ -1,0 +1,247 @@
+@media screen and (max-width: 1198px) {
+  .Right-Part .first img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1032px) {
+  .fourth-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 973px) {
+    .container{
+        padding: 0.5rem;
+    }
+  .Left-top h1 {
+    font-size: 50px;
+    width: 480px;
+  }
+  .Left-top p {
+    width: 470px;
+  }
+  .Right-Part .second img {
+    width: 300px;
+    height: 498px;
+  }
+  .nineth-wrapper {
+    gap: 1rem;
+    padding: 4rem;
+  }
+  .fif h1 {
+    font-size: 50px;
+  }
+  .fif p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 918px) {
+  .Links {
+    display: none;
+  }
+  .Right-header {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 891px) {
+  .seventh-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .comp-department {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 824px) {
+  .second-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .nineth-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 719px){
+    .Third-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width: 622px) {
+  .Left-top h1 {
+    text-align: center;
+  }
+  .Trust-Logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .fourth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Right-About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .Right-About h3{
+    text-align: center;
+  }
+  .fif h1{
+    font-size: 40px;
+  }
+  .fif p{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 494px){
+    .All-logos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: -4rem;
+    }
+    .button button:nth-child(1){
+        font-size: 16px;
+        padding: 1rem 2rem;
+    }
+    .button button:nth-child(2){
+        font-size: 16px;
+        padding: 1rem 2rem;
+    }
+    .Left-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .Left-top h1{
+        font-size: 35px;
+        width: 300px;      
+    }
+    .Left-top p{
+        width: 300px;
+    }
+    .Experience h3{
+        font-size: 25px;
+    }
+    .Right-About {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+    .Right-About h3{
+        font-size: 20px;
+        width: 230px;
+    }
+    .Learn-more-part{
+        flex-grow: 1;
+    }
+    .fifth-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .Join h1{
+        font-size: 30px;
+    }
+    .nineth-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .tenth-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+        padding: 2rem;
+    }
+    .first1 p{
+        width: 200px;   
+    }
+}
+@media screen and (max-width: 320px){
+    .second-wrapper{
+        margin-top: -8rem;
+    }
+    .Left-top h1{
+        font-size: 30px;
+        width: 250px;
+    }
+    .Left-top p{
+        width: 250px;
+    }
+    .Right-Part .second img{
+        width: 270px;
+    }
+    .div1{
+        width: 240px;
+    }
+    .card-content{
+        padding: 0.1rem;
+    }
+    .card-content h4{
+        font-size: 15px;
+        width: 210px;
+    }
+    .Right-About button{
+        padding: 1rem 3rem;
+        font-size: 14px;
+    }
+    .button button:nth-child(1){
+        font-size: 12px;
+        padding: 1rem 1rem;
+    } 
+    .button button:nth-child(2){
+        font-size: 12px;
+        padding: 1rem 1rem;
+    }
+    .Learn-more-part p{
+        width: 230px;
+    }
+    .learn{
+        display: flex;
+        flex-direction: column;
+    }
+    .comp h5{
+        font-size: 20px;
+    }
+    .Join h1{
+        font-size: 25px;
+        width: 250px;
+    }
+    form input{
+        padding: 0.5rem 0.1rem;
+    }
+    form button{
+        padding: 0.5rem 0.7rem;
+    }
+    .tenth-wrapper{
+        padding: 2rem;
+    }
+}

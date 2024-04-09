@@ -1,0 +1,868 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #f9fcff;
+  padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+.Links ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  list-style-type: none;
+}
+.Links ul li a {
+  text-decoration: none;
+  color: #1a2434;
+  font-size: 20px;
+  font-family: "Outfit", sans-serif;
+}
+.Links ul li a:hover {
+  text-decoration: underline;
+}
+.Right-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.form-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+form input {
+  border-radius: 50px;
+  padding: 0.3rem 1rem;
+  border: none;
+}
+.hamburger-menu {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+}
+.hambar {
+  width: 70%;
+  height: 5px;
+  background-color: black;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.6s, opacity 0.8s, top 0.6s;
+  z-index: 2000;
+}
+.bar1 {
+  top: 25%;
+}
+.bar3 {
+  top: 75%;
+}
+.hamburger-menu.active .bar1 {
+  transform: translate(-50%, -50%) rotate(-315deg);
+  top: 50%;
+}
+.hamburger-menu.active .bar2 {
+  opacity: 0;
+}
+.hamburger-menu.active .bar3 {
+  transform: translate(-50%, -50%) rotate(-225deg);
+  top: 50%;
+}
+.off-screen-menu {
+  padding: 3rem;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  right: -75%;
+  width: 65%;
+  height: 100vh;
+  transition: right 0.9s;
+  z-index: 1000;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.off-screen-menu.active {
+  right: 0;
+}
+.Links2{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+  list-style-type: none;
+}
+.Links2 li a {
+  text-decoration: none;
+  color: #1a2434;
+  font-size: 25px;
+  font-family: "Outfit", sans-serif;
+}
+.Links2 li a:hover {
+  text-decoration: underline;
+}
+.hamburger-menu{
+  display: none;
+}
+.second-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10rem;
+}
+.Left-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  flex-grow: 1;
+}
+.Left-top h1 {
+  width: 550px;
+  font-weight: bold;
+  font-size: 60px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+}
+.Left-top p {
+  width: 500px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.Left-top-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.line {
+  width: 5px;
+  height: 80px;
+  background-color: #a4074d;
+  border-radius: 5px;
+}
+.Total-image p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+.Total-image img {
+  width: 200px;
+  height: 80px;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.button button:nth-child(1) {
+  padding: 1rem 3rem;
+  background-color: #a4074d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+}
+.button button:nth-child(1):hover {
+  transform: scale(1.1);
+  transition: ease-out 0.9s;
+  background-color: #1a2434;
+  color: white;
+}
+.button button:nth-child(2) {
+  padding: 1rem 3rem;
+  background-color: white;
+  color: #a4074d;
+  border: 1px solid #a4074d;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button button:nth-child(2):hover {
+  transform: scale(1.1);
+  transition: ease-out 0.9s;
+  background-color: #a4074d;
+  color: white;
+}
+.Trust-Logos p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.All-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 1rem;
+}
+.Right-Part .first img {
+  position: absolute;
+  top: 250px;
+  right: 315px;
+  z-index: 1;
+}
+.Right-Part .second img {
+  position: relative;
+}
+.Experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 7rem;
+}
+.Why-choose-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.line2 {
+  width: 80px;
+  height: 5px;
+  background-color: #a4074d;
+  border-radius: 5px;
+}
+.Why-choose-us p {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.Experience h3 {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+}
+.Third-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 8rem;
+  flex-wrap: wrap;
+}
+.Learn-more-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+  padding: 1rem;
+}
+.Learn-more-part h4 {
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+}
+.Learn-more-part p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+  width: 300px;
+  flex-wrap: wrap;
+}
+.learn {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.learn p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  opacity: 0.7;
+  width: fit-content;
+}
+.fourth-wrapper {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10rem;
+}
+.Left-About-img img {
+  width: 100%;
+  height: 100%;
+}
+.Right-About {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+.About-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.line3 {
+  width: 80px;
+  height: 5px;
+  background-color: #a4074d;
+  border-radius: 5px;
+}
+.Right-About h3 {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+  width: 460px;
+}
+.Right-About p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  line-height: 2;
+  opacity: 0.7;
+  width: fit-content;
+}
+.About-us p {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.Right-About button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 5rem;
+  background-color: #a4074d;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Right-About button:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.9s;
+  background-color: #1a2434;
+  color: white;
+}
+.fifth-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10rem;
+  flex-grow: 1;
+}
+.fif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.fif h1 {
+  font-size: 64px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: bold;
+  color: #1a2434;
+}
+.fif span {
+  color: #a4074d;
+}
+.fif p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+  text-align: center;
+}
+.Class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  gap: 1rem;
+}
+.Class h3 {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+}
+.comp-department {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  background-color: #f4f4f4;
+  padding: 0.5rem 0.4rem;
+  border-radius: 50px;
+}
+.comp-department:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.9s;
+}
+.comp {
+  padding: 1rem 1.8rem;
+  border-radius: 50px;
+}
+.comp:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.comp h5 {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.sixth-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 7rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.card img {
+  border-radius: 2rem 2rem 0 0;
+  flex-shrink: 0;
+}
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.card-content h4 {
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 280px;
+  text-align: center;
+  flex-grow: 1;
+  color: #1a2434;
+}
+.lesson-and-week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.lesson {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 0.2rem;
+}
+.lesson p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+  width: fit-content;
+}
+.Week {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: right;
+  gap: 0.2rem;
+}
+.Week p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+  width: fit-content;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+.price p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+  width: fit-content;
+  font-weight: bold;
+}
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.2rem;
+}
+.rating p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+  width: fit-content;
+  font-weight: bold;
+}
+.View-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.View-all-btn button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 3rem;
+  background-color: #a4074d;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+}
+.View-all-btn button:hover {
+  transform: scale(1.1);
+  transition: ease-out 0.9s;
+  background-color: #1a2434;
+  color: white;
+}
+.Testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 6rem;
+}
+.Testimonial h3 {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+}
+.seventh-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+.Test {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.About-Test {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.Student {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+.Student h4 {
+  font-size: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 300;
+  color: #1a2434;
+  opacity: 0.9;
+}
+.Student p {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 0.2rem;
+}
+.rate p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  opacity: 0.7;
+}
+.Test p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.7;
+}
+.Blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+.Blog h3 {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1a2434;
+}
+.eighth-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10rem;
+  flex-wrap: wrap;
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.e-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  flex-shrink: 0;
+}
+.articles p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  opacity: 0.9;
+}
+.articles-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+.user p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.date {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 0.5rem;
+}
+.date p {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.Reading-more div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nineth-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background-color: #a4074d;
+  padding: 7rem;
+}
+.Join h1 {
+  font-size: 32px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+  width: 360px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  opacity: 0.9;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 0.1rem;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+form button {
+  padding: 0.5rem 2rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+  flex-wrap: nowrap;
+}
+form input{
+  padding: 0.5rem 0rem;
+}
+form button:hover {
+    transition: ease-out 0.9s;
+  background-color: #a4074d;
+  color: white;
+}
+.tenth-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #1a2434;
+  flex-wrap: wrap;
+}
+.first1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 3rem;
+}
+.Logo2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.Logo2 h4{
+    font-size: 27px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    color: white;
+    opacity: 0.9;
+}
+.first1 p{
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    opacity: 0.7;
+    width: 300px;
+    color: white;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.second h4{
+    font-size: 27px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    opacity: 0.9;
+    color: white;
+}
+.second p{
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    opacity: 0.4;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.Social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+.Social-media p{
+    font-size: 27px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 300;
+    opacity: 0.9;
+    color: white;
+}
