@@ -96,7 +96,6 @@ header {
   top: 50%;
 }
 .off-screen-menu {
-  padding: 4rem;
   position: fixed;
   top: 0;
   background-color: #f9fcff;
@@ -372,7 +371,6 @@ header {
   font-weight: 100;
   line-height: 2;
   opacity: 0.7;
-  width: fit-content;
 }
 .About-us p {
   font-size: 20px;
@@ -762,8 +760,8 @@ header {
 }
 .nineth-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
   background-color: #a4074d;
@@ -773,7 +771,8 @@ header {
   font-size: 32px;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: white;
-  width: 360px;
+  padding: 0 1rem 0 0;
+  text-align: center;
 }
 form {
   display: flex;
