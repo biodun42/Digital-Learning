@@ -37,8 +37,6 @@ body.active{
 .loader::after {
   border-color: #0000 #0000 blue blue;
   animation-direction: reverse;
-}
-.disappear{
   animation: vanish 1s forwards;
 }
 @keyframes l14{ 
